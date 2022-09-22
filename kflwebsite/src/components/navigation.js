@@ -20,6 +20,11 @@ const Navigation = () => (
           Nyheter
         </Link>
       </li>
+      <li className={styles.navigationItem}>
+        <Link to="/" activeClassName="active">
+          Bli medlem
+        </Link>
+      </li>
     </ul>
   </nav>
 )
