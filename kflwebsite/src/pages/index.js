@@ -47,6 +47,24 @@ export const pageQuery = graphql`
         }
       }
     }
+    allContentfulPage(sort: { fields: [publishDate], order: DESC }) {
+      nodes {
+        title
+        slug
+        publishDate(formatString: "MMMM Do, YYYY")
+        heroImage {
+          gatsbyImage(
+            layout: FULL_WIDTH
+            placeholder: BLURRED
+            width: 424
+            height: 212
+          )
+        }
+        description {
+          raw
+        }
+      }
+    }
     allContentfulPerson(
       filter: { contentful_id: { eq: "15jwOBqpxqSAOy2eOO4S0m" } }
     ) {

@@ -21,7 +21,7 @@ const Navigation = () => (
         </Link>
       </li>
       <li className={styles.navigationItem}>
-        <Link to="/" activeClassName="active">
+        <Link to="/bli-medlem" activeClassName="active">
           Bli medlem
         </Link>
       </li>
