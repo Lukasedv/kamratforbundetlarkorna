@@ -4,7 +4,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: "Kamratförbunder Lärkorna",
+    title: "Kamratförbundet Lärkorna",
     description: "Kamratförbundet Lärkornas hemsida",
   },
   plugins: [
